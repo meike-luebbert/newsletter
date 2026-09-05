@@ -14,7 +14,7 @@
      ============================================================ -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Klartext Vertrieb – der Newsletter von Meike Lübbert</title>
+<title>&bdquo;Klartext Vertrieb&ldquo; – der Newsletter von Meike Lübbert</title>
 <meta name="description" content="Einmal die Woche der Blick von außen auf deinen Vertrieb – für Unternehmer mit bestehendem Sales-Team.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23FFD100'/><text x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='20' font-weight='700' fill='%232B2A27' text-anchor='middle'>M</text></svg>">
 <style>
@@ -36,7 +36,7 @@
     background:var(--bg);color:var(--ink);
     font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  .wrap{max-width:1220px;margin:0 auto;padding:0 24px}
 
   .topbar{padding:18px 0 0}
   .logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:14px}
@@ -54,12 +54,12 @@
   .hero .subheadline{font-size:20px;color:var(--muted);line-height:1.55;margin:18px 0 0;max-width:48ch}
   .hero-form{margin-top:30px;max-width:420px}
   .hero-form .row{margin-bottom:13px}
-  .hero-form .check{display:flex;align-items:flex-start;gap:10px;margin:14px 0 16px}
+  .hero-form .check{display:flex;align-items:flex-start;gap:10px;margin:14px 0 0}
   .hero-form .check input{width:auto;margin-top:3px}
-  .hero-form .check label{font-size:13.5px;color:var(--muted);font-weight:500}
-  .cta-note{font-size:15px;color:var(--muted);margin-top:12px}
+  .hero-form .check label{font-size:15px;color:var(--muted);font-weight:500}
+  .cta-note{font-size:16px;color:var(--muted);margin-top:12px}
 
-  .hero-image img{width:100%;max-width:480px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 24px 60px -24px rgba(0,0,0,.25)}
+  .hero-image img{width:100%;max-width:560px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 24px 60px -24px rgba(0,0,0,.25)}
 
   /* ---------- ABSCHNITT 2: HOOK-TEXT ---------- */
   .hook{padding:64px 0 0}
@@ -89,6 +89,11 @@
   .freq{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:22px 26px;text-align:center;max-width:560px;margin:0 auto}
   .freq b{color:var(--ink);font-size:19px}
   .freq span{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+
+  .statbar{display:flex;justify-content:center;gap:44px;flex-wrap:wrap}
+  .statbar .stat{text-align:center}
+  .statbar .stat b{display:block;font-size:27px;font-weight:900;letter-spacing:-.01em}
+  .statbar .stat span{font-size:14px;color:var(--muted)}
 
   .arrows{text-align:center;font-size:26px;letter-spacing:.25em;margin:18px 0 10px;line-height:1}
   .cta-center{text-align:center}
@@ -129,9 +134,9 @@
   /* ---------- ERNEUTER CTA – bewusst kein Schwarzblock mehr, schlichte Sektion ---------- */
   .final{margin:56px 0 0;border-top:1px solid var(--line);padding-top:48px;text-align:center}
   .final form{max-width:420px;margin:0 auto;text-align:left}
-  .final .check{display:flex;align-items:flex-start;gap:10px;margin:14px 0 16px}
+  .final .check{display:flex;align-items:flex-start;gap:10px;margin:14px 0 0}
   .final .check input{width:auto;margin-top:3px}
-  .final .check label{font-size:13.5px;color:var(--muted);font-weight:500}
+  .final .check label{font-size:15px;color:var(--muted);font-weight:500}
   .final .micro{color:var(--muted);font-size:12.5px;margin-top:14px;text-align:center;line-height:1.45}
   .final .micro a{color:var(--muted)}
 
@@ -165,6 +170,8 @@
     .kpi b{font-size:16px}
     .quotes{grid-template-columns:1fr}
     .final{padding-top:36px;margin-top:44px}
+    .statbar{gap:26px}
+    .statbar .stat b{font-size:22px}
   }
 </style>
 </head>
@@ -181,9 +188,8 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="preheadline">Für Unternehmer, die bereits ein Vertriebsteam haben</p>
       <h1>Deine Pipeline ist voll, aber du weißt nicht, wo der Umsatz <mark>liegen bleibt?</mark></h1>
-      <p class="subheadline">Mit Klartext Vertrieb bekommst du, was ich sonst nur in Beratungsprojekten teile: den Blick von außen auf deinen Vertrieb – konkret genug, um montags direkt etwas damit zu tun.</p>
+      <p class="subheadline">Mit dem Newsletter &bdquo;Klartext Vertrieb&ldquo; bekommst du, was ich sonst nur in Beratungsprojekten teile: den Blick von außen auf deinen Vertrieb – konkret genug, um montags direkt etwas damit zu tun.</p>
 
       <!-- HINWEIS: KIT-FORM-ID EINSETZEN. Eigene Form fuer den Newsletter anlegen. -->
       <form class="optin-form hero-form" action="https://app.kit.com/forms/9884507/subscriptions" method="post">
@@ -195,12 +201,11 @@
           <label for="email">E-Mail-Adresse</label>
           <input id="email" name="email_address" type="email" placeholder="deine@firma.de" autocomplete="email" required>
         </div>
+        <button class="btn full" type="submit">Ja, ich will den Newsletter &raquo;</button>
         <div class="check">
           <input id="dsgvo" type="checkbox" required>
-          <label for="dsgvo">Ich habe die <a href="https://www.meike-luebbert.de/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und bin einverstanden, Post von Klartext Vertrieb zu bekommen.</label>
+          <label for="dsgvo">Ich habe die <a href="https://www.meike-luebbert.de/datenschutz" target="_blank" rel="noopener">Datenschutzbestimmungen</a> gelesen und akzeptiere diese hiermit.</label>
         </div>
-        <button class="btn full" type="submit">Ja, ich will Klartext Vertrieb &raquo;</button>
-        <p class="cta-note">Kostenlos, kein Spam, jederzeit mit einem Klick abbestellbar.</p>
       </form>
     </div>
     <div class="hero-image">
@@ -212,17 +217,17 @@
 <!-- ============ ABSCHNITT 2: HOOK-TEXT ============ -->
 <section class="hook">
   <div class="wrap">
-    <h2>Warum ich diesen Newsletter schreibe</h2>
-    <p>Die meisten Unternehmer, mit denen ich arbeite, haben längst ein Vertriebsteam, ein CRM und eine volle Pipeline. Trotzdem sagt niemand ihnen, wo genau der Umsatz liegen bleibt. Die Zahlen sind da – nur beantworten sie nicht die Frage, die eigentlich zählt.</p>
-    <p class="pull">Nicht „ich bin der Flaschenhals", sondern: Wir lassen Geld liegen, und ich kann nicht sagen, wo.</p>
-    <p>Genau diese Lücke schließe ich in 25 Jahren Vertriebserfahrung immer wieder bei meinen Kunden. Mit Klartext Vertrieb bekommst du davon regelmäßig etwas ab – ohne dafür gleich ein Beratungsprojekt zu brauchen.</p>
+    <h2>Was du von &bdquo;Klartext Vertrieb&ldquo; hast</h2>
+    <p>Du hast längst ein Vertriebsteam, ein CRM und eine volle Pipeline. Trotzdem kann dir niemand sagen, wo genau der Umsatz liegen bleibt. Die Zahlen sind da, sie beantworten nur nicht die Frage, die eigentlich zählt.</p>
+    <p class="pull">Du bist nicht der Flaschenhals. Irgendwo bleibt Geld liegen, und bisher kannst du nicht sagen, wo.</p>
+    <p>Genau da setzt &bdquo;Klartext Vertrieb&ldquo; an: Du bekommst regelmäßig den Blick von außen, den ich sonst nur in Beratungsprojekten teile, mit 25 Jahren Vertriebserfahrung dahinter, ganz ohne dass du dafür gleich ein Beratungsprojekt brauchst.</p>
   </div>
 </section>
 
 <!-- ============ CONTENT-KATEGORIEN ============ -->
 <section class="centered">
   <div class="wrap">
-    <h2>Das erwartet dich in Klartext Vertrieb</h2>
+    <h2>Das erwartet dich in &bdquo;Klartext Vertrieb&ldquo;</h2>
     <p class="lead">Vier Themenfelder, die sich wiederholen – kein Bauchgefühl, sondern das, was in echten Vertriebsprojekten tatsächlich den Unterschied macht.</p>
     <div class="kpis">
       <div class="kpi">
@@ -252,7 +257,7 @@
 <!-- ============ ABSCHNITT 3: BULLET-POINTS ============ -->
 <section class="offer-bullets">
   <div class="wrap">
-    <h2>Mit Klartext Vertrieb bekommst du&nbsp;…</h2>
+    <h2>Mit &bdquo;Klartext Vertrieb&ldquo; bekommst du&nbsp;…</h2>
     <ul class="bullets">
       <li><span class="tick">&#10003;</span><span><b>Den Diagnose-Blick von außen:</b> Wie du erkennst, an welcher Stelle deines Vertriebs tatsächlich Umsatz verloren geht.</span></li>
       <li><span class="tick">&#10003;</span><span><b>Warum „mehr Leads" selten das eigentliche Problem ist:</b> und was stattdessen an der Wurzel sitzt.</span></li>
@@ -276,8 +281,19 @@
 <section>
   <div class="wrap cta-center">
     <div class="arrows">&#8595;&#8595;&#8595;</div>
-    <a class="btn" href="#eintragen">Ja, ich will Klartext Vertrieb &raquo;</a>
+    <a class="btn" href="#eintragen">Ja, ich will den Newsletter &raquo;</a>
     <p class="cta-note">Kostenlos. Kein Verkaufsgespräch, kein Pitch.</p>
+  </div>
+</section>
+
+<!-- ============ VERTRAUENS-STAT ============ -->
+<section class="centered">
+  <div class="wrap">
+    <div class="statbar">
+      <div class="stat"><b>8 Mio. &euro;</b><span>abgeschlossener Umsatz</span></div>
+      <div class="stat"><b>25 Jahre</b><span>Vertriebserfahrung</span></div>
+      <div class="stat"><b>1.500+</b><span>ausgebildete Sales Berater</span></div>
+    </div>
   </div>
 </section>
 
@@ -309,7 +325,7 @@
         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p>„Wer eine fundierte externe Sales-Perspektive mit echtem Impact sucht, ist bei Meike genau richtig.“</p>
         <div class="who">
-          <div class="initials">AF</div>
+          <img src="alexander.jpg" alt="Alexander Faubel">
           <div><b>Alexander Faubel</b><span>Strategischer Salesaufbau &amp; Leadership-Mentoring</span></div>
         </div>
       </div>
@@ -321,7 +337,7 @@
 <!-- ============ 6) PERFEKT FÜR DICH, FALLS … ============ -->
 <section class="centered">
   <div class="wrap">
-    <h2>Klartext Vertrieb ist perfekt für dich, falls …</h2>
+    <h2>&bdquo;Klartext Vertrieb&ldquo; ist perfekt für dich, falls …</h2>
     <ul class="fitlist">
       <li><span class="tick">&#10003;</span><span>du bereits ein Vertriebsteam hast, aber niemand dir sagen kann, wo genau Umsatz liegen bleibt</span></li>
       <li><span class="tick">&#10003;</span><span>deine KPIs existieren, du aber nicht weißt, ob es die richtigen sind</span></li>
@@ -336,7 +352,7 @@
 <!-- ============ 7) ERNEUTER CALL TO ACTION (echtes, zweites Formular) ============ -->
 <div class="wrap" id="eintragen">
   <div class="final">
-    <h2>Hol dir Klartext Vertrieb.</h2>
+    <h2>Hol dir &bdquo;Klartext Vertrieb&ldquo;.</h2>
     <p class="lead" style="margin-left:auto;margin-right:auto">Trag dich mit deiner E-Mail-Adresse ein, bestätige kurz – und du bist dabei.</p>
 
     <!-- HINWEIS: KIT-FORM-ID EINSETZEN (gleiche Form wie oben im Hero). -->
@@ -349,11 +365,11 @@
         <label for="email2">E-Mail-Adresse</label>
         <input id="email2" name="email_address" type="email" placeholder="deine@firma.de" autocomplete="email" required>
       </div>
+      <button class="btn full" type="submit">Ja, ich will den Newsletter &raquo;</button>
       <div class="check">
         <input id="dsgvo2" type="checkbox" required>
-        <label for="dsgvo2">Ich habe die <a href="https://www.meike-luebbert.de/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und bin einverstanden, Post von Klartext Vertrieb zu bekommen.</label>
+        <label for="dsgvo2">Ich habe die <a href="https://www.meike-luebbert.de/datenschutz" target="_blank" rel="noopener">Datenschutzbestimmungen</a> gelesen und akzeptiere diese hiermit.</label>
       </div>
-      <button class="btn full" type="submit">Ja, ich will Klartext Vertrieb &raquo;</button>
     </form>
   </div>
 </div>
