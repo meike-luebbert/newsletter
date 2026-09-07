@@ -14,8 +14,8 @@
      ============================================================ -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>&bdquo;Klartext Vertrieb&ldquo; – der Newsletter von Meike Lübbert</title>
-<meta name="description" content="Einmal die Woche der Blick von außen auf deinen Vertrieb – für Unternehmer mit bestehendem Sales-Team.">
+<title>&bdquo;Klartext Vertrieb&ldquo;, der Newsletter von Meike Lübbert</title>
+<meta name="description" content="Einmal die Woche der Blick von außen auf deinen Vertrieb. Für Unternehmer mit bestehendem Sales-Team.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23FFD100'/><text x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='20' font-weight='700' fill='%232B2A27' text-anchor='middle'>M</text></svg>">
 <style>
   /* Kein Schwarz mehr als Flächenfarbe – nur Weiß/Creme + Gelb, Text in warmem Dunkelgrau.
@@ -40,8 +40,7 @@
 
   .topbar{padding:18px 0 0}
   .logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:14px}
-  .logo .mark{width:27px;height:27px;border-radius:7px;background:var(--accent);color:var(--ink);
-    display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900}
+  .logo img{height:30px;width:auto;display:block}
 
   /* ---------- HERO – above the fold, bewusst grosszuegiger ---------- */
   .hero{padding:44px 0 0}
@@ -55,8 +54,9 @@
   .hero-form{margin-top:30px;max-width:420px}
   .hero-form .row{margin-bottom:13px}
   .hero-form .check{display:flex;align-items:flex-start;gap:10px;margin:14px 0 0}
-  .hero-form .check input{width:auto;margin-top:3px}
+  .hero-form .check input{width:20px;height:20px;margin-top:2px;accent-color:var(--ink);cursor:pointer;flex-shrink:0}
   .hero-form .check label{font-size:15px;color:var(--muted);font-weight:500}
+  .check label a{color:inherit;text-decoration:underline}
   .cta-note{font-size:16px;color:var(--muted);margin-top:12px}
 
   .hero-image img{width:100%;max-width:560px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 24px 60px -24px rgba(0,0,0,.25)}
@@ -109,7 +109,7 @@
   .btn.full{display:block;width:100%}
 
   section{padding:54px 0 0}
-  h2{font-size:31px;font-weight:900;letter-spacing:-.015em;margin-bottom:14px;max-width:24ch}
+  h2{font-size:31px;font-weight:900;letter-spacing:-.015em;margin-bottom:14px;max-width:34ch}
   .lead{font-size:18px;color:var(--muted);margin-bottom:22px;max-width:650px}
   .centered{text-align:center}
   .centered h2{margin-left:auto;margin-right:auto}
@@ -133,9 +133,10 @@
 
   /* ---------- ERNEUTER CTA – bewusst kein Schwarzblock mehr, schlichte Sektion ---------- */
   .final{margin:56px 0 0;border-top:1px solid var(--line);padding-top:48px;text-align:center}
+  .final h2{margin-left:auto;margin-right:auto}
   .final form{max-width:420px;margin:0 auto;text-align:left}
   .final .check{display:flex;align-items:flex-start;gap:10px;margin:14px 0 0}
-  .final .check input{width:auto;margin-top:3px}
+  .final .check input{width:20px;height:20px;margin-top:2px;accent-color:var(--ink);cursor:pointer;flex-shrink:0}
   .final .check label{font-size:15px;color:var(--muted);font-weight:500}
   .final .micro{color:var(--muted);font-size:12.5px;margin-top:14px;text-align:center;line-height:1.45}
   .final .micro a{color:var(--muted)}
@@ -180,7 +181,7 @@
 <!-- ============ 1) LOGO ============ -->
 <div class="topbar">
   <div class="wrap">
-    <div class="logo"><span class="mark">M</span> Next Sales Consulting</div>
+    <div class="logo"><img src="logo-ml.jpg" alt="Meike Lübbert"> Next Sales Consulting</div>
   </div>
 </div>
 
@@ -189,7 +190,7 @@
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <h1>Deine Pipeline ist voll, aber du weißt nicht, wo der Umsatz <mark>liegen bleibt?</mark></h1>
-      <p class="subheadline">Mit dem Newsletter &bdquo;Klartext Vertrieb&ldquo; bekommst du, was ich sonst nur in Beratungsprojekten teile: den Blick von außen auf deinen Vertrieb – konkret genug, um montags direkt etwas damit zu tun.</p>
+      <p class="subheadline">Mit dem Newsletter &bdquo;Klartext Vertrieb&ldquo; bekommst du, was ich sonst nur in Beratungsprojekten teile: den Blick von außen auf deinen Vertrieb, konkret genug, um direkt in die Umsetzung zu kommen.</p>
 
       <!-- HINWEIS: KIT-FORM-ID EINSETZEN. Eigene Form fuer den Newsletter anlegen. -->
       <form class="optin-form hero-form" action="https://app.kit.com/forms/9884507/subscriptions" method="post">
@@ -214,79 +215,7 @@
   </div>
 </section>
 
-<!-- ============ ABSCHNITT 2: HOOK-TEXT ============ -->
-<section class="hook">
-  <div class="wrap">
-    <h2>Was du von &bdquo;Klartext Vertrieb&ldquo; hast</h2>
-    <p>Du hast längst ein Vertriebsteam, ein CRM und eine volle Pipeline. Trotzdem kann dir niemand sagen, wo genau der Umsatz liegen bleibt. Die Zahlen sind da, sie beantworten nur nicht die Frage, die eigentlich zählt.</p>
-    <p class="pull">Du bist nicht der Flaschenhals. Irgendwo bleibt Geld liegen, und bisher kannst du nicht sagen, wo.</p>
-    <p>Genau da setzt &bdquo;Klartext Vertrieb&ldquo; an: Du bekommst regelmäßig den Blick von außen, den ich sonst nur in Beratungsprojekten teile, mit 25 Jahren Vertriebserfahrung dahinter, ganz ohne dass du dafür gleich ein Beratungsprojekt brauchst.</p>
-  </div>
-</section>
-
-<!-- ============ CONTENT-KATEGORIEN ============ -->
-<section class="centered">
-  <div class="wrap">
-    <h2>Das erwartet dich in &bdquo;Klartext Vertrieb&ldquo;</h2>
-    <p class="lead">Vier Themenfelder, die sich wiederholen – kein Bauchgefühl, sondern das, was in echten Vertriebsprojekten tatsächlich den Unterschied macht.</p>
-    <div class="kpis">
-      <div class="kpi">
-        <div class="num">01</div>
-        <b>Diagnose</b>
-        <span>Wie du in 10 Minuten siehst, wo im Vertrieb Geld liegen bleibt.</span>
-      </div>
-      <div class="kpi">
-        <div class="num">02</div>
-        <b>Steuerung</b>
-        <span>Die Kennzahlen, an denen du – nicht dein Team – erkennst, ob der Monat läuft.</span>
-      </div>
-      <div class="kpi">
-        <div class="num">03</div>
-        <b>Führung</b>
-        <span>Wie du dein Sales-Team führst, ohne jeden Call selbst zu übernehmen.</span>
-      </div>
-      <div class="kpi">
-        <div class="num">04</div>
-        <b>Aus der Praxis</b>
-        <span>Kurze Gedanken und echte Fälle aus 25 Jahren Vertrieb – ungefiltert.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ABSCHNITT 3: BULLET-POINTS ============ -->
-<section class="offer-bullets">
-  <div class="wrap">
-    <h2>Mit &bdquo;Klartext Vertrieb&ldquo; bekommst du&nbsp;…</h2>
-    <ul class="bullets">
-      <li><span class="tick">&#10003;</span><span><b>Den Diagnose-Blick von außen:</b> Wie du erkennst, an welcher Stelle deines Vertriebs tatsächlich Umsatz verloren geht.</span></li>
-      <li><span class="tick">&#10003;</span><span><b>Warum „mehr Leads" selten das eigentliche Problem ist:</b> und was stattdessen an der Wurzel sitzt.</span></li>
-      <li><span class="tick">&#10003;</span><span><b>Den #1-Fehler, den Unternehmer mit bestehendem Vertriebsteam machen:</b> sobald der Umsatz stagniert.</span></li>
-      <li><span class="tick">&#10003;</span><span><b>Klartext statt Motivationsfloskeln:</b> Sales-Impulse, die du direkt auf dein Unternehmen anwenden kannst.</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ FREQUENZ-INFO ============ -->
-<section class="centered">
-  <div class="wrap">
-    <div class="freq">
-      <b>Regelmäßig direkt ins Postfach</b>
-      <span>Kurz, konkret, ohne Fülltext – du liest ihn in unter 5 Minuten.</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 4) CALL TO ACTION – springt runter zum zweiten Formular ============ -->
-<section>
-  <div class="wrap cta-center">
-    <div class="arrows">&#8595;&#8595;&#8595;</div>
-    <a class="btn" href="#eintragen">Ja, ich will den Newsletter &raquo;</a>
-    <p class="cta-note">Kostenlos. Kein Verkaufsgespräch, kein Pitch.</p>
-  </div>
-</section>
-
-<!-- ============ VERTRAUENS-STAT ============ -->
+<!-- ============ VERTRAUENS-STAT (nach oben geholt, direkt nach dem Hero) ============ -->
 <section class="centered">
   <div class="wrap">
     <div class="statbar">
@@ -297,7 +226,7 @@
   </div>
 </section>
 
-<!-- ============ 5) SOCIAL PROOF ============ -->
+<!-- ============ SOCIAL PROOF (nach oben geholt, direkt nach dem Hero) ============ -->
 <section>
   <div class="wrap">
     <!-- Testimonials austauschbar – siehe 08_Wiki/Testimonials.md, Meike wählt evtl. andere aus -->
@@ -334,6 +263,78 @@
   </div>
 </section>
 
+<!-- ============ ABSCHNITT 2: HOOK-TEXT ============ -->
+<section class="hook">
+  <div class="wrap">
+    <h2>Kennst du das auch?</h2>
+    <p>Du hast längst ein Vertriebsteam, ein CRM und eine volle Pipeline. Trotzdem kann dir niemand sagen, wo genau der Umsatz liegen bleibt. Die Zahlen sind da, sie beantworten nur nicht die Frage, die eigentlich zählt.</p>
+    <p class="pull">Du bist nicht der Flaschenhals. Irgendwo bleibt Geld liegen, und bisher kannst du nicht sagen, wo.</p>
+    <p>Genau da setzt &bdquo;Klartext Vertrieb&ldquo; an: Du bekommst regelmäßig den Blick von außen, den ich sonst nur in Beratungsprojekten teile, mit 25 Jahren Vertriebserfahrung dahinter, ganz ohne dass du dafür gleich ein Beratungsprojekt brauchst.</p>
+  </div>
+</section>
+
+<!-- ============ CONTENT-KATEGORIEN ============ -->
+<section class="centered">
+  <div class="wrap">
+    <h2>Das erwartet dich in &bdquo;Klartext Vertrieb&ldquo;</h2>
+    <p class="lead">Vier Themenfelder, die sich wiederholen: kein Bauchgefühl, sondern das, was in echten Vertriebsprojekten tatsächlich den Unterschied macht.</p>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="num">01</div>
+        <b>Diagnose</b>
+        <span>Wie du in 10 Minuten siehst, wo im Vertrieb Geld liegen bleibt.</span>
+      </div>
+      <div class="kpi">
+        <div class="num">02</div>
+        <b>Steuerung</b>
+        <span>Die Kennzahlen, an denen du selbst erkennst, ob der Monat läuft, nicht dein Team.</span>
+      </div>
+      <div class="kpi">
+        <div class="num">03</div>
+        <b>Führung</b>
+        <span>Wie du dein Sales-Team führst, ohne jeden Call selbst zu übernehmen.</span>
+      </div>
+      <div class="kpi">
+        <div class="num">04</div>
+        <b>Aus der Praxis</b>
+        <span>Kurze Gedanken und echte Fälle aus 25 Jahren Vertrieb, ungefiltert.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABSCHNITT 3: BULLET-POINTS ============ -->
+<section class="offer-bullets">
+  <div class="wrap">
+    <h2>Mit &bdquo;Klartext Vertrieb&ldquo; bekommst du&nbsp;…</h2>
+    <ul class="bullets">
+      <li><span class="tick">&#10003;</span><span><b>Den Diagnose-Blick von außen:</b> Wie du erkennst, an welcher Stelle deines Vertriebs tatsächlich Umsatz verloren geht.</span></li>
+      <li><span class="tick">&#10003;</span><span><b>Warum „mehr Leads" selten das eigentliche Problem ist:</b> und was stattdessen an der Wurzel sitzt.</span></li>
+      <li><span class="tick">&#10003;</span><span><b>Den #1-Fehler, den Unternehmer mit bestehendem Vertriebsteam machen:</b> sobald der Umsatz stagniert.</span></li>
+      <li><span class="tick">&#10003;</span><span><b>Klartext statt Motivationsfloskeln:</b> Sales-Impulse, die du direkt auf dein Unternehmen anwenden kannst.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FREQUENZ-INFO ============ -->
+<section class="centered">
+  <div class="wrap">
+    <div class="freq">
+      <b>Regelmäßig direkt ins Postfach</b>
+      <span>Kurz, konkret, ohne Fülltext. Du liest ihn in unter 5 Minuten.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4) CALL TO ACTION – springt runter zum zweiten Formular ============ -->
+<section>
+  <div class="wrap cta-center">
+    <div class="arrows">&#8595;&#8595;&#8595;</div>
+    <a class="btn" href="#eintragen">Ja, ich will den Newsletter &raquo;</a>
+    <p class="cta-note">Kostenlos. Kein Verkaufsgespräch, kein Pitch.</p>
+  </div>
+</section>
+
 <!-- ============ 6) PERFEKT FÜR DICH, FALLS … ============ -->
 <section class="centered">
   <div class="wrap">
@@ -342,7 +343,7 @@
       <li><span class="tick">&#10003;</span><span>du bereits ein Vertriebsteam hast, aber niemand dir sagen kann, wo genau Umsatz liegen bleibt</span></li>
       <li><span class="tick">&#10003;</span><span>deine KPIs existieren, du aber nicht weißt, ob es die richtigen sind</span></li>
       <li><span class="tick">&#10003;</span><span>du aus Marketing oder Tech kommst und gerade merkst, dass Vertrieb anders tickt</span></li>
-      <li><span class="tick">&#10003;</span><span>dein Team einen okayen Job macht – aber ohne Führung</span></li>
+      <li><span class="tick">&#10003;</span><span>dein Team einen okayen Job macht, aber ohne Führung</span></li>
       <li><span class="tick">&#10003;</span><span>du nicht abgeben willst, sondern verstehen und steuern</span></li>
     </ul>
     <p class="fit-note">Erkennst du dich wieder? Dann trag dich ein. &#128071;</p>
@@ -353,7 +354,7 @@
 <div class="wrap" id="eintragen">
   <div class="final">
     <h2>Hol dir &bdquo;Klartext Vertrieb&ldquo;.</h2>
-    <p class="lead" style="margin-left:auto;margin-right:auto">Trag dich mit deiner E-Mail-Adresse ein, bestätige kurz – und du bist dabei.</p>
+    <p class="lead" style="margin-left:auto;margin-right:auto">Trag dich mit deiner E-Mail-Adresse ein, bestätige kurz, und du bist dabei.</p>
 
     <!-- HINWEIS: KIT-FORM-ID EINSETZEN (gleiche Form wie oben im Hero). -->
     <form class="optin-form" action="https://app.kit.com/forms/9884507/subscriptions" method="post">
